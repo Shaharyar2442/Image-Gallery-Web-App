@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!--This line tells the browser that this is a HTML5 document.-->
+<html lang="en"> <!--This line tells the browser that the language of the document is English.-->
+
+<head> <!--This line tells the browser that the head of the document is here.-->
+    <meta charset="UTF-8"> <!--This line tells the browser that the character encoding of the document is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This line tells the browser that the viewport of the document is the width of the device.-->
+    <title>Gothic Architecture Gallery - Home</title> <!--This line tells the browser the title of the document.-->
+</head>
+
+<body style="background-color: #121212; color: #e0e0e0; font-family: 'Times New Roman', serif; margin: 0; padding: 20px;
+    text-align: center;">
+    <!--This line tells the browser that the background color of the document is #121212, the color of the text is #e0e0e0, the font of the document is 'Times New Roman', serif, the margin of the document is 0, the padding of the document is 20px, and the text alignment of the document is center.-->
+
+    <header> <!--This line tells the browser that the header of the document is here.-->
+        <h1 style="color: #ffffff; font-size: 3em; margin-bottom: 10px;">Gothic Architecture Gallery</h1>
+    </header>
+
+    <nav style="font-family: Arial, sans-serif; font-size: 1.2em; margin-bottom: 20px;">
+        <!--This line tells the browser that the navigation of the document is here.-->
+        <a href="index.html" style="color: #a6a6a6; text-decoration: none; margin: 0 10px;">Home</a> |
+        <a href="about.html" style="color: #a6a6a6; text-decoration: none; margin: 0 10px;">About</a> |
+        <a href="signup.html" style="color: #a6a6a6; text-decoration: none; margin: 0 10px;">Sign Up</a> |
+        <a href="signin.html" style="color: #a6a6a6; text-decoration: none; margin: 0 10px;">Sign In</a> |
+        <a href="contact.html" style="color: #a6a6a6; text-decoration: none; margin: 0 10px;">Contact</a>
+    </nav>
+
+    <hr style="width: 80%; border-color: #5c5c5c; margin: 20px auto;">
+    <!-- what is horizontal rule: A horizontal rule is a horizontal line that is used to separate the content of a web page.-->
+
+    <main> <!--This line tells the browser that the main content of the document is here.-->
+        <section> <!--This line tells the browser that the section of the document is here.-->
+            <h2 style="font-size: 2em; margin-bottom: 10px;">Welcome to the Shadows</h2>
+            <p style="font-size: 1.1em;">Explore the haunting beauty of Gothic architecture.</p>
+        </section>
+
+        <!-- Gallery Grid using Flexbox for easier alignment without tables -->
+        <div
+            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; width: 80%; margin-left: auto; margin-right: auto;">
+
+            <!-- Image 1 -->
+            <article style="flex: 1 1 300px; max-width: 400px;">
+                <!--What does style do: Style is used to style the content of a web page.What does flex do: 
+                 Flex is used to align the content of a web page.What does flex-wrap do: 
+                 Flex-wrap is used to wrap the content of a web page.
+                 What does justify-content do: Justify-content is used to justify the content of a web page.
+                 What does gap do: Gap is used to create a gap between the content of a web page.
+                 
+                 What does margin-top do: Margin-top is used to create a margin at the top of the content of a web page.What does width do: Width is used to set the width of the content of a web page.What does margin-left do: Margin-left is used to create a margin at the left of the content of a web page.What does margin-right do: Margin-right is used to create a margin at the right of the content of a web page.-->
+                <img src="https://images.pexels.com/photos/17856788/pexels-photo-17856788.jpeg" alt="Gothic Cathedral"
+                    style="width: 100%; height: 300px; object-fit: cover; border: 2px solid #5c5c5c;">
+                <h3 style="font-size: 1.5em; margin-top: 15px;">Notre-Dame de Paris</h3>
+                <p style="font-size: 1em;">A masterpiece of French Gothic architecture.</p>
+            </article>
+
+            <!-- Image 2 -->
+            <article style="flex: 1 1 300px; max-width: 400px;">
+                <img src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?w=500&q=80" alt="Gothic Detail"
+                    style="width: 100%; height: 300px; object-fit: cover; border: 2px solid #5c5c5c;">
+                <h3 style="font-size: 1.5em; margin-top: 15px;">Intricate Details</h3>
+                <p style="font-size: 1em;"></p>
+            </article>
+
+            <!-- Image 3 -->
+            <article style="flex: 1 1 300px; max-width: 400px;">
+                <img src="https://images.pexels.com/photos/33498804/pexels-photo-33498804.jpeg" alt="Gothic Arch"
+                    style="width: 100%; height: 300px; object-fit: cover; border: 2px solid #5c5c5c;">
+                <h3 style="font-size: 1.5em; margin-top: 15px;">Amiens Cathedral</h3>
+                <p style="font-size: 1em;">Majestic Facade of Amiens Cathedral, France.</p>
+            </article>
+
+            <!-- Image 4 -->
+            <article style="flex: 1 1 300px; max-width: 400px;">
+                <img src="https://images.pexels.com/photos/18563627/pexels-photo-18563627.jpeg" alt="Gothic Structure"
+                    style="width: 100%; height: 300px; object-fit: cover; border: 2px solid #5c5c5c;">
+                <h3 style="font-size: 1.5em; margin-top: 15px;">Gothic Church</h3>
+                <p style="font-size: 1em;">Symmetrical View of a Gothic Church Interior with Stained Glass and Rosettes
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 60px;">
+        <hr style="width: 80%; border-color: #5c5c5c; margin: 20px auto;">
+        <p style="font-family: Arial, sans-serif; font-size: 0.9em;">&copy; 2026 Gothic Gallery.
+        </p>
+    </footer>
+
+</body>
+
+</html>
