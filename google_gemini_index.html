@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Gothic Architecture Art Gallery Assignment">
+    <title>Obsidian | Gothic Architecture Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturMaguntia&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="logo">
+            <i class="fa-brands fa-fort-awesome"></i> Obsidian
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signin" class="btn-login">Sign In</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Shadows & Stone</h1>
+            <p>Exploring the sublime beauty of Gothic Architecture.</p>
+            <a href="#gallery" class="cta-button">Enter Gallery</a>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">The Collection</h2>
+        <div class="gallery-grid">
+            <div class="card">
+                <div class="card-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1548625361-9872e454f03b?q=80&w=800&auto=format&fit=crop');">
+                </div>
+                <div class="card-info">
+                    <h3>Notre-Dame</h3>
+                    <p>French Gothic</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1518090382346-f947963d395d?q=80&w=800&auto=format&fit=crop');">
+                </div>
+                <div class="card-info">
+                    <h3>Milan Cathedral</h3>
+                    <p>Italian Gothic</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1523055486958-f7b55f110777?q=80&w=800&auto=format&fit=crop');">
+                </div>
+                <div class="card-info">
+                    <h3>Cologne Cathedral</h3>
+                    <p>German Gothic</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"
+                    style="background-image: url('https://images.unsplash.com/photo-1594582962386-f6d396a84c8a?q=80&w=800&auto=format&fit=crop');">
+                </div>
+                <div class="card-info">
+                    <h3>Westminster Abbey</h3>
+                    <p>English Gothic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2 class="section-title">About the Era</h2>
+            <p>Gothic architecture is a European style of architecture that values height and exhibits an intricate and
+                delicate aesthetic. Though its roots are French, the Gothic style can be found in churches, cathedrals,
+                and other similar buildings in Europe and beyond.</p>
+            <ul class="features-list">
+                <li><i class="fa-solid fa-archway"></i> Pointed Arches</li>
+                <li><i class="fa-solid fa-cloud-moon"></i> Ribbed Vaults</li>
+                <li><i class="fa-solid fa-place-of-worship"></i> Flying Buttresses</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="signin" class="auth-section">
+        <div class="auth-container">
+
+            <div class="auth-box">
+                <h3>Member Login</h3>
+                <form>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Enter</button>
+                </form>
+            </div>
+
+            <div class="auth-box alt-box" id="signup">
+                <h3>New Acolyte?</h3>
+                <p>Join our society of architectural preservation.</p>
+                <form>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <button type="submit" class="submit-btn outline">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p><i class="fa-solid fa-location-dot"></i> 12 Grimmauld Place, London</p>
+                <p><i class="fa-solid fa-phone"></i> +44 20 7946 0000</p>
+                <p><i class="fa-solid fa-envelope"></i> curator@obsidian.gallery</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Obsidian Gallery. Designed with <i class="fa-solid fa-heart" style="color: #920000;"></i> by You.
+        </p>
+    </footer>
+
+</body>
+
+</html>

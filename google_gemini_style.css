@@ -1,0 +1,282 @@
+/* --- 1. GLOBAL VARIABLES & RESET --- */
+:root {
+    --primary-color: #0b0c10;
+    /* Very Dark Grey */
+    --secondary-color: #1f2833;
+    /* Dark Blue-Grey */
+    --accent-color: #c5c6c7;
+    /* Light Grey */
+    --gold-highlight: #d4af37;
+    /* Gold for Gothic feel */
+    --blood-red: #8a0303;
+    /* Deep Red for accents */
+    --text-font: 'Lato', sans-serif;
+    --header-font: 'Cinzel', serif;
+    --gothic-font: 'UnifrakturMaguntia', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-family: var(--text-font);
+    line-height: 1.6;
+}
+
+/* --- 2. HEADER & NAVIGATION (Pseudo-classes) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(11, 12, 16, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.logo {
+    font-family: var(--gothic-font);
+    font-size: 2rem;
+    color: var(--gold-highlight);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+/* Pseudo-class: Link states */
+.nav-links a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-family: var(--header-font);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+/* Pseudo-class: Hover */
+.nav-links a:hover {
+    color: var(--blood-red);
+}
+
+.btn-login {
+    border: 1px solid var(--gold-highlight);
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: var(--gold-highlight) !important;
+}
+
+.btn-login:hover {
+    background-color: var(--gold-highlight);
+    color: var(--primary-color) !important;
+}
+
+/* --- 3. SECTIONS & HERO --- */
+section {
+    padding: 80px 20px;
+    min-height: 80vh;
+    /* Responsive height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--gothic-font);
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: var(--gold-highlight);
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* ID Selector */
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518298029706-560c6d7d43f0?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax effect */
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-family: var(--gothic-font);
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: var(--blood-red);
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-weight: bold;
+    border: 1px solid var(--blood-red);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    border-color: var(--gold-highlight);
+    color: var(--gold-highlight);
+}
+
+/* --- 4. GALLERY GRID (Flexbox/Grid) --- */
+#gallery {
+    background-color: var(--primary-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Class Selector */
+.card {
+    background-color: var(--secondary-color);
+    border: 1px solid #333;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    font-family: var(--header-font);
+    color: var(--gold-highlight);
+}
+
+/* --- 5. ABOUT SECTION --- */
+#about {
+    background-color: var(--secondary-color);
+}
+
+.about-container {
+    max-width: 800px;
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.features-list li {
+    font-size: 1.2rem;
+    font-family: var(--header-font);
+}
+
+.features-list i {
+    color: var(--blood-red);
+    margin-right: 10px;
+}
+
+/* --- 6. AUTH & FORMS (Sign In / Sign Up) --- */
+.auth-section {
+    background-color: var(--primary-color);
+}
+
+.auth-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.auth-box {
+    background: #000;
+    padding: 40px;
+    border: 1px solid var(--secondary-color);
+    width: 350px;
+}
+
+.auth-box h3 {
+    font-family: var(--header-font);
+    color: var(--gold-highlight);
+    margin-bottom: 20px;
+}
+
+/* Type Selector: Input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blood-red);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--header-font);
+}
+
+/* --- 7. FOOTER --- */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid var(--blood-red);
+}
+
+/* --- 8. RESPONSIVE DESIGN (Media Query) --- */
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        /* Simple hiding for mobile, normally you'd add JS for a hamburger menu */
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-list {
+        flex-direction: column;
+    }
+}
